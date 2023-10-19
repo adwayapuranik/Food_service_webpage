@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>foodie</title>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /*css reset*/
+    body {
+        font-family: 'Abril Fatface', cursive;
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url('images/spaghetti-gf00a69aa6_1920.jpg');
+        background-size: cover;
+        /*backdrop-filter: blur(10px);*/
+    }
+
+    .left {
+        display: inline-block;
+       /* border: 2px solid black;*/
+        position: absolute;
+        left: 100px;
+
+    }
+
+    .left img {
+        width: 100px;
+        height: fit-content;
+        width: 80px;
+        /*filter:invert(100%);*/
+
+    }
+
+    .left div {
+        text-align: center;
+    }
+
+    .mid {
+        display: block;
+        width: 36%;
+        margin: 20px auto;
+       /* border: 2px solid red;*/
+        backdrop-filter: blur(10px);
+    }
+
+    .right {
+        top: 20px;
+        display: inline-block;
+       /* border: 2px solid green;*/
+        position: absolute;
+        right: 34px;
+    }
+
+    .navbar {
+        display: inline-block;
+
+    }
+
+    .navbar li {
+        display: inline-block;
+        color: white;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 34px 10px;
+        font-size: 20px;
+        /*font-weight: bold;*/
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: rgb(229, 198, 62);
+    }
+
+    .btn {
+        font-family: 'Abril Fatface', cursive;
+        margin: 15px 9px;
+        background-color: rgb(246, 241, 241);
+        color: rgb(12, 8, 8);
+        /* font-weight: bold;*/
+        border-radius: 30px;
+        border-color: white;
+        font-size: 15px;
+        cursor: pointer;
+        font-weight: bolder;
+    }
+
+    .btn:hover {
+        background-color: rgb(229, 198, 62);
+    }
+
+    .container {
+        font-family: 'Abril Fatface', cursive;
+        border: 3px solid white;
+        margin: 90px 50px;
+        padding: 50px;
+        width: 30%;
+        border-radius: 25px;
+        font-size: 15px;
+        font-weight: lighter;
+        color: rgb(212, 236, 165);
+        backdrop-filter: blur(10px);
+        }
+        .form-group{
+            font-family: 'Abril Fatface', cursive;
+            text-align: center;
+            display: block;
+            width: 50px;
+            padding: 5px;
+            margin: 10px 100px;
+            font-size: 20px;
+        }
+        .form-group input
+        {
+            font-family: 'Abril Fatface', cursive;
+            border: 2px solid white;
+            border-radius: 25px;
+        }
+        .container h1{
+            text-align: center;
+        }
+        .container button{
+            display: block;
+            width: 23%;
+            margin: auto;
+        }
+</style>
+
+<body>
+    <header class="header">
+
+        <!--left box for logo-->
+        <div class="left">
+            <img src="images/1600w-jeSR74GRMC8.webp" alt="">
+        </div>
+
+        <!--mid box for navbar-->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <!--right box for buttons-->
+        <div class="right">
+            <button class="btn">Order NOW!!</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Enjoy our delicious pastas</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Email">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Contact">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Address">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
